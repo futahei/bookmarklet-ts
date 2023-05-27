@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "rollup": "^3.23.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "tslib": "^2.5.2"
   }
 }
