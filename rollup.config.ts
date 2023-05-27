@@ -5,7 +5,7 @@ const config: RollupOptions = {
   input: "src/index.ts",
   output: {
     file: "dist/index.js",
-    format: "iife",
+    format: "esm",
   },
   plugins: [typescript()],
 };
